@@ -10,6 +10,7 @@ import {
     Switch
 } from 'react-router-dom'
 import NumCardConX from './containers/NumCard'
+import Zdk from './containers/Zdk'
 import SideMeu from './components/SideMeu'
 import Loadable from 'react-loadable'
 import Fu from './components/Fu';
@@ -88,7 +89,7 @@ class App extends Component {
         return (
             <Router >
                 <div className="App">
-                    <Prompt message="您确定您要离开当前页面吗？"/>
+                    {/* <Prompt message="您确定您要离开当前页面吗？"/> */}
                     <SideMeu/>
                     <Route exact path='/' component={ NumCardConX }/>
                     <Route exact path='/fu2zi' component={ Fu }/>
@@ -101,6 +102,7 @@ class App extends Component {
                     <Route path="/morecharts" render={()=><MoreWiseCharts type='line' title='多曲线图联动' data={data}/>} />
                     <Route path="/gridcharts" component={GridCharts} />
                     <Route path='/home' render={()=><Redirect to='/login'/>}/>
+                    <Route path='/zdk' component={Zdk}/>
                 </div>
             </Router>
         );

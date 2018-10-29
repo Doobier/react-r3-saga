@@ -2,7 +2,8 @@ function addInput(state = {
     showtext: '沉良'
 }, action) {
     const showtext = state.showtext
-    console.log(showtext)
+    console.log(state)
+    console.log(action)
     switch (action.type) {
         case 'ADD_INPUT':
             return {

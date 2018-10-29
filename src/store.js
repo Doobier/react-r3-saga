@@ -9,6 +9,7 @@ import counter from './reducers/counter'
 import addInput from './reducers/addInput'
 import thunkReducer from './reducers/thunkReducer'
 import sagaReducer from './reducers/sagaReducer'
+import zdkReducer from './reducers/zdkReducer'
 import logger from 'redux-logger'
 import thunk from 'redux-thunk'
 import rootSaga from './sagas/sagas'
@@ -23,7 +24,8 @@ const reducer = combineReducers({
     counter,
     addInput,
     thunkReducer,
-    sagaReducer
+    sagaReducer,
+    zdkReducer
 })
 // redux-devtools 方式Ⅰ
 // const enhancer = compose(

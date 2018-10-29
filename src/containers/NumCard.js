@@ -4,7 +4,7 @@ import { connect} from 'react-redux';
 // import {addOne,addOneAsync} from "../actions/counterAction";
 import * as CounterActions from '../actions/counterAction'
 
- 
+ console.log(CounterActions)
 class NumCard extends Component {
     constructor(props) {
         super(props)
@@ -36,8 +36,9 @@ class NumCard extends Component {
  
 }
  
-function mapStateToProps(state) {
+function mapStateToProps(state, ownProp) {
 console.log(state)
+console.log(ownProp)
 return {
     count: state.counter.count,
     secCount: state.counter.secCount,

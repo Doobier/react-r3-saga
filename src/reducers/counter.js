@@ -8,7 +8,7 @@ function counter(state = {
     secCount: 0
 }, action) {
     const count = state.count
-    console.log(action)
+    console.log(state)
     switch (action.type) {
         case 'ADD':
             return { ...state,
